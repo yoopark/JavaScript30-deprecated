@@ -1,7 +1,7 @@
 'use strict';
 
 function changeBackground() {
-	day = new Date();
+	let day = new Date();
 	x = day.getHours()
 	const view = document.querySelector('html');
 	
