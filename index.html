@@ -3,76 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="images/chocolate.jpg" type="images/x-icon">
-	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="./images/chocolate.jpg" type="images/x-icon">
+	<link rel="stylesheet" href="./styles.css">
 	<title>Yooooopark</title>
-	<script defer="main.js"></script>
+	<script src="./script.js" defer></script>
 </head>
 <body onmousemove="adaptCoordinates(event)">
 	<div class="logo">
-		<img src="images/chocolate.jpg" width="40" height="40">
+		<img src="./images/chocolate.jpg" width="40" height="40">
 		<a href="https://yoopark.github.io">Yooooopark</a>
 	</div>
 
 	<ul class="swiper">
-		<li><img src="images/font-Y.png"></li>
+		<li><img src="./images/font-Y.png"></li>
 		<div class="box">
 			<li class="special">
-				<a href="01/"><img src="images/font-O.png"></a>
+				<a href="./day01/"><img src="./images/font-O.png"></a>
 				<div class="hidden">
 					<h3>01</h3>
 					<p>JavaScript Drum Kit</p>
 				</div>
 			</li>
 			<li class="special">
-				<a href="02/"><img src="images/font-O.png"></a>
+				<a href="./day02/"><img src="./images/font-O.png"></a>
 				<div class="hidden">
 					<h3>02</h3>
 					<p>JS + CSS Clock</p>
 				</div>
 			</li>
 			<li class="special">
-				<a href="03/"><img src="images/font-O.png"></a>
+				<a href="./day03/"><img src="./images/font-O.png"></a>
 				<div class="hidden">
 					<h3>03</h3>
 					<p>Playing with CSS Variables and JS</p>
 				</div>
 			</li>
 			<li class="special">
-				<a href="04/"><img src="images/font-O.png"></a>
+				<a href="./day04/"><img src="./images/font-O.png"></a>
 				<div class="hidden">
 					<h3>04</h3>
 					<p>Array Cardio Day 1</p>
 				</div>
 			</li>
 			<li class="special">
-				<a href="05/"><img src="images/font-O.png"></a>
+				<a href="./day05/"><img src="./images/font-O.png"></a>
 				<div class="hidden">
 					<h3>05</h3>
 					<p>Flex Panels Image Gallery</p>
 				</div>
 			</li>
 			<li class="end">
-				<img src="images/font-O.png">
+				<img src="./images/font-O.png">
 			</li>
 		</div>
-		<li><img src="images/font-P.png"></li>
-		<li><img src="images/font-A.png"></li>
-		<li><img src="images/font-R.png"></li>
-		<li><img src="images/font-K.png"></li>
+		<li><img src="./images/font-P.png"></li>
+		<li><img src="./images/font-A.png"></li>
+		<li><img src="./images/font-R.png"></li>
+		<li><img src="./images/font-K.png"></li>
 	</ul>
-
-<script>
-
-function adaptCoordinates(event) {
-	var width = window.innerWidth;
-	var x = event.clientX;
-	var pct = (x / width);
-
-	window.scrollTo(event.pageX * pct, event.pageY, 'smooth');
-}
-
-</script>
-
 </body>
 </html>

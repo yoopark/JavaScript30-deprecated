@@ -1,6 +1,12 @@
 'use strict';
 
-const end = document.querySelector('.end');
+function adaptCoordinates(event) {
+	var width = window.innerWidth;
+	var x = event.clientX;
+	var pct = (x / width);
+
+	window.scrollTo(event.pageX * pct, event.pageY, 'smooth');
+}
 
 function changeProperty() {
 	this.classList.add('clocking');
@@ -8,4 +14,6 @@ function changeProperty() {
 	specials.forEach(special => special.setAttribute("style", "position: static;"));
 }
 
+const end = document.querySelector('.end');
+console.log(end);
 end.addEventListener('click', changeProperty);
