@@ -2,7 +2,7 @@
 
 function adaptCoordinates(event) {
 	const pct = event.clientX / window.innerWidth;
-	window.scrollTo(event.pageX * pct, event.pageY, 'smooth');
+	window.scrollTo(event.pageX * pct, event.clientY, 'smooth');
 }
 
 function changeProperty() {
