@@ -1,10 +1,7 @@
 'use strict';
 
 function adaptCoordinates(event) {
-	var width = window.innerWidth;
-	var x = event.clientX;
-	var pct = (x / width);
-
+	const pct = event.clientX / window.innerWidth;
 	window.scrollTo(event.pageX * pct, event.pageY, 'smooth');
 }
 
@@ -15,5 +12,4 @@ function changeProperty() {
 }
 
 const end = document.querySelector('.end');
-console.log(end);
 end.addEventListener('click', changeProperty);
