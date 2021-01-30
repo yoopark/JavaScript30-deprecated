@@ -18,11 +18,12 @@ body {
 	padding: 20px;
 	margin: 0px;
 	background-color: #F5F1F2;
-	cursor: url(image/cursor.png), auto;
+	cursor: url(images/cursor.png), auto;
 }
 
 a {
-	cursor: url(image/link.png), auto;
+	cursor: url(images/link.png), auto;
+	text-decoration: none;
 }
 
 .logo {
@@ -30,7 +31,7 @@ a {
 	height: 30vh;
 }
 
-.logo p {
+.logo a {
 	font-size: 30px;
 	font-weight: 700;
 	margin: 0px;
