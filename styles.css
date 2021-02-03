@@ -30,15 +30,22 @@ a {
 
 .logo {
 	display: flex;
-	height: 30vh;
+	align-items: center;
+	padding-bottom: 20vh;
 }
 
 .logo a {
 	font-size: 30px;
-	font-weight: 700;
-	margin: 0px;
+	font-family: "Noto Sans KR Bold";
+	padding-left: 10px;
 	color: #6B4951;
-	padding-left: 15px;
+}
+
+.logo p {
+	font-size: 20px;
+	font-family: "Noto Sans KR Thin";
+	padding-left: 10px;
+	color: #6B4951;
 }
 
 .swiper {
@@ -72,7 +79,7 @@ img {
 	-webkit-transform: scale(1.6, 1.6);
 	transform: scale(1.6, 1.6);
 	opacity: 0.5;
-	padding-left: 100px;
+	padding-left: 100px; /* 굳이 padding을 넣어서 다른 요소로 넘어가는걸 방해해야 하나? */
 	padding-right: 100px;
 }
 
@@ -96,6 +103,7 @@ img {
 }
 
 .hidden > p {
+	font-family: "Noto Sans KR Thin";
 	font-size: 3vh;
 	margin: 0;
 	white-space: nowrap;
