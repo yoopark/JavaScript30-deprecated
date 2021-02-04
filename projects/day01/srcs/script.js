@@ -42,6 +42,7 @@ window.addEventListener('keydown', playSound);
 
 const inputs = document.querySelectorAll('input');
 const bgm = document.getElementById('bgm');
+bgm.volume = 0.3;
 
 function handleUpdate() {
 	bgm.volume = this.value * 0.01;
