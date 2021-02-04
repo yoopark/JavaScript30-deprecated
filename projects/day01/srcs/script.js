@@ -20,10 +20,6 @@ function removeTransition(e) {
 	if (e.propertyName !== 'transform')
 		return ;
 	e.target.classList.remove('playing');
-	/* 
-	** foo.classList.add('bar');
-	** foo.classList.remove('bar'); 
-	*/
 	changeBrightness('100%');
 }
 
@@ -33,10 +29,9 @@ function removeTransition(e) {
 ** Array.from 을 활용하여 NodeList -> Array 변환이 필요했지만,
 ** 이제는 NodeList 클래스 안에도 ForEach가 추가되었기 때문에 그냥 사용이 가능하다.
 */
-
 const keys = document.querySelectorAll('.key');
 
-keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
 
 
