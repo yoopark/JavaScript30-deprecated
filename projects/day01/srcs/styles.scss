@@ -1,0 +1,54 @@
+html {
+	background: url('../assets/images/greenday.jpg') bottom center;
+	background-size: cover;
+	font-size: 10px;
+}
+
+body, html {
+	margin: 0; // 0px = 0% = 0em = 0pt = 0
+	padding: 0;
+	font-family: sans-serif;
+}
+
+input[type=range] {
+	float: right;
+	margin: 20px;
+	background: green;
+}
+
+.keys {
+	display: flex;
+	flex: 1; // 자식 요소 모두에 대하여 flex-grow: 1 -> 너비 1:1:1:1
+	width: 100vw;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	.key {
+		width: 10rem; // 1rem = html 요소의 font-size
+		padding: 1rem .5rem;
+		margin: 1rem;
+		border: .4rem solid black;
+		border-radius: .5rem;
+		background: rgba(0,0,0,0.4);
+		color: white;
+		font-size: 1.5rem;
+		transition: all .07s ease;
+		text-align: center;
+		text-shadow: 0 0 .5rem black;
+		kbd {
+			display: block;
+			font-size: 4rem;
+		}
+		.sound {
+			color: #ffc600;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			letter-spacing: .1rem;
+		}
+	}
+	.playing {
+		border-color: #ffc600;
+		transform: scale(1.1);
+		box-shadow: 0 0 1rem #ffc600;
+	}
+}

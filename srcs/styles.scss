@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('../assets/fonts/NotoSansKR-100.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('../assets/fonts/NotoSansKR-900.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+* {
+	font-family: 'Noto Sans KR';
+	transition: .5s;
+	cursor: url('../assets/images/cursor_basic.png'), auto;
+}
+
+html {
+	width: max-content;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	background-color: #F5F1F2;
+}
+
+body {
+	padding: 20px;
+	margin: 0;
+	a {
+		text-decoration: none;
+		cursor: url('../assets/images/cursor_link.png'), auto;
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	padding-bottom: 20vh;
+	a {
+		padding-left: 10px;
+		color: #6B4951;
+		font: {
+			size: 30px;
+			weight: bold;
+		}
+	}
+	p {
+		padding-left: 10px;
+		color: #6B4951;
+		font-size: 20px;
+	}
+}
+
+.swiper {
+	display: flex;
+	margin: 0;
+	li {
+		list-style-type: none;
+		height: 55vh;
+	}
+	.box {
+		display: flex;
+		.special {
+			display: none;
+			.hidden {
+				position: absolute;
+				padding-left: 70px;
+				color: #6B4951;
+				font-size: 3vh;
+				opacity: 0%;
+				transition: .5s;
+
+				h3 {
+					margin: 0;
+					font: {
+						size: 7vh;
+						weight: bold;
+					}
+				}
+				p {
+					margin: 0;
+					font-size: 3vh;
+					white-space: nowrap;
+				}
+			}
+			&:hover {
+				img {
+					padding: 0 100px 0 100px; // 굳이 padding을 넣어서 다른 요소로 넘어가는걸 방해해야 하나?
+					-webkit-transform: scale(1.6, 1.6);
+					transform: scale(1.6, 1.6);
+					opacity: 50%;
+				}
+				.hidden {
+					opacity: 100%;
+				}
+			}
+		}
+		.end {
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				animation: {
+					name: blink;
+					duration: .7s;
+					iteration-count: infinite;
+					direction: alternate;
+				}
+			}
+		}
+	}
+}
+
+@keyframes blink {
+	from {
+		opacity: 50%;
+	}
+	to {
+		opacity: 100%;
+	}
+}

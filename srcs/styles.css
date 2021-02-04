@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../assets/fonts/NotoSansKR-100.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../assets/fonts/NotoSansKR-900.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Noto Sans KR';
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: url("../assets/images/cursor_basic.png"), auto;
+}
+
+html {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #F5F1F2;
+}
+
+body {
+  padding: 20px;
+  margin: 0;
+}
+
+body a {
+  text-decoration: none;
+  cursor: url("../assets/images/cursor_link.png"), auto;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20vh;
+}
+
+.logo a {
+  padding-left: 10px;
+  color: #6B4951;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo p {
+  padding-left: 10px;
+  color: #6B4951;
+  font-size: 20px;
+}
+
+.swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.swiper li {
+  list-style-type: none;
+  height: 55vh;
+}
+
+.swiper .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper .box .special {
+  display: none;
+}
+
+.swiper .box .special .hidden {
+  position: absolute;
+  padding-left: 70px;
+  color: #6B4951;
+  font-size: 3vh;
+  opacity: 0%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.swiper .box .special .hidden h3 {
+  margin: 0;
+  font-size: 7vh;
+  font-weight: bold;
+}
+
+.swiper .box .special .hidden p {
+  margin: 0;
+  font-size: 3vh;
+  white-space: nowrap;
+}
+
+.swiper .box .special:hover img {
+  padding: 0 100px 0 100px;
+  -webkit-transform: scale(1.6, 1.6);
+  transform: scale(1.6, 1.6);
+  opacity: 50%;
+}
+
+.swiper .box .special:hover .hidden {
+  opacity: 100%;
+}
+
+.swiper .box .end img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 50%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 50%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
