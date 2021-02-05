@@ -1,0 +1,41 @@
+:root {
+  --base: #ffc600;
+  --scale: 10;
+  --blur: 30px;
+}
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+.controls input {
+  width: 200px;
+}
+
+.container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.container img {
+  max-height: 300px;
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+  background: var(--base);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+:root {
+	--base: #ffc600;
+	--scale: 10;
+	--blur: 30px;
+}
+
+body {
+	text-align: center;
+	background: #193549;
+	color: white;
+	font: {
+		family: 'helvetica neue', sans-serif;
+		weight: 100;
+		size: 30px;
+	}
+}
+
+.hl {
+	color: var(--base);
+}
+
+.controls {
+	margin-bottom: 50px;
+	input {
+		width: 200px;
+	}
+}
+
+.container {
+	display: inline-block;
+	overflow: hidden;
+	img {
+		max-height: 300px;
+		transform: scale(var(--scale));
+		background: var(--base);
+		filter: blur(var(--blur));
+	}
+}
