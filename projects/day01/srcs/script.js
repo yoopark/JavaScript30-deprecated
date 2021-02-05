@@ -17,6 +17,12 @@ function playSound(e) {
 }
 
 function removeTransition(e) {
+	//  console.log(e);
+	/* 
+	** 특정 키를 누르면 transitionend 되는 propertyName 순서는 다음과 같다.
+	** border-bottom-color -> border-left-color -> border-right-color
+	** -> border-top-color -> box-shadow -> transform
+	*/
 	if (e.propertyName !== 'transform')
 		return ;
 	e.target.classList.remove('playing');
