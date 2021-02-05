@@ -1,13 +1,13 @@
 # Day01 - Javascript Drum Kit
 
 ## 👽 TIL
-1. JS querySelector -> class 수정하기
+### 1. JS querySelector -> class 수정하기
 ``` Javascript
 foo.classList.add('bar');
 foo.classList.remove('bar');
 ```
 
-2. JS addEventListener
+### 2. JS addEventListener
 ``` Javascript
 foo.addEventListener('bar', function);
 ```

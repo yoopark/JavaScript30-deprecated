@@ -1,8 +1,7 @@
 # Day02 - JS + CSS Clock
 
 ## 👽 TIL
-
-1. CSS position
+### 1. CSS position
 ``` CSS
 foo {
 	position: static;
@@ -14,7 +13,7 @@ foo {
 - relative: 위치 수정 가능. 기준은 static
 - absolute: 위치 수정 가능. 기준은 부모 요소 중 처음으로 `position: static;`이지 않은 것.
 
-2. SCSS @mixin
+### 2. SCSS @mixin
 - 공통 속성을 모아서 정의할 수 있다.
 - [링크](https://www.codingfactory.net/10110)
 
