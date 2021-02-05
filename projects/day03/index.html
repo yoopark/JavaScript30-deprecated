@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Scoped CSS Variables and JS</title>
-  <link rel="stylesheet" href="./srcs/styles.css">
-  <script src="./srcs/script.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scoped CSS Variables and JS</title>
+	<link rel="stylesheet" href="./srcs/index.css">
 </head>
 <body>
-  <h2>Your score is <span id="score" class='hl'></span></h2>
-
-  <div class="controls">
-    <label for="scale">Zoom:</label>
-    <input id="scale" type="range" name="scale" min="1.0" max="10.0" value="10.0" step="0.1">
-
-    <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="30" value="30" data-sizing="px">
-  </div>
-
-  <div class="container">
-    <img src="./assets/images/pikachu.png">
-  </div>
-
-  <div class="answersheet">
-    <input id="answer" type="text" name="answer" placeholder="Lower case, all one word">
-    <button id="submit" onclick="clickSubmitButton();">Submit</button>
-    <button id="pass" onclick="clickPassButton();">Pass</button>
-  </div>
-
-  <!-- <div class="pass">
-    <label for="base">Go to Next Quiz</label>
-    <input id="base" type="color" name="base" value="#ffc600">
-  </div> -->
+	<h2>Image Name Guessing Game</h2>
+	<p>
+		<b>제한시간은 60초.</b> <br>
+		게임을 시작하면 엉뚱한 네모가 하나 등장합니다. <br>
+		사실 그 네모는 어떤 이미지의 <b>10배 확대 + 심한 블러 처리</b>가 되어 있는 이미지입니다.<br>
+		<br>
+		<b>Zoom과 Blur 처리를 가능한 한 적게 해제하여 답을 맞추는 게 목표</b>입니다. <br>
+		정답은 반드시 영어 소문자, 띄어쓰기 없는 한 단어를 형식으로 합니다.<br>
+		Zoom보다 Blur를 해제하지 않고 푸는 것이 더 어렵기 때문에 Blur에 더 큰 가중치가 있습니다.<br>
+		<br>
+	</p>
+	<div class="images">
+		<img src="./assets/images/gameplay_start.PNG">
+		<img src="./assets/images/gameplay_wrong.PNG">
+		<img src="./assets/images/gameplay_correct.PNG">
+	</div>
+	<p>아래 버튼을 누르면 게임을 시작할 수 있습니다.</p>
+	<button><a href="./game.html">Game Start</a></button>
 </body>
 </html>

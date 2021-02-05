@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  line-height: 2.5em;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images img {
+  width: 30%;
+  height: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: #193549;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=index.css.map */

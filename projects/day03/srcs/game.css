@@ -38,4 +38,8 @@ body {
   -webkit-filter: blur(var(--blur));
           filter: blur(var(--blur));
 }
-/*# sourceMappingURL=styles.css.map */
+
+#result {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=game.css.map */
