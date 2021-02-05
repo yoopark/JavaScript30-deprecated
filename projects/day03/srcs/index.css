@@ -7,6 +7,10 @@ body {
   line-height: 2.5em;
 }
 
+h2 {
+  color: #ffe15c;
+}
+
 .images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,8 +26,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #193549;
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.5em;
 }

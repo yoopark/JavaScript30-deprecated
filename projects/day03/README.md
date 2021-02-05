@@ -1,5 +1,6 @@
 https://blog.naver.com/retspe/220789825284?proxyReferer=https%3A%2F%2Fwww.google.com%2F
 
+https://www.edweek.org/quizzes
 
 - 시간 기능 추가
   - 게임 완료 페이지 만들기
