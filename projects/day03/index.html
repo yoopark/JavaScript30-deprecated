@@ -7,7 +7,7 @@
   <script src="./srcs/script.js" defer></script>
 </head>
 <body>
-  <h2>Your score is <span class='hl'>0</span></h2>
+  <h2>Your score is <span id="score" class='hl'></span></h2>
 
   <div class="controls">
     <label for="scale">Zoom:</label>
@@ -23,8 +23,8 @@
 
   <div class="answersheet">
     <input id="answer" type="text" name="answer" placeholder="Lower case, all one word">
-    <button id="submit">Submit</button>
-    <button id="pass">Pass</button>
+    <button id="submit" onclick="clickSubmitButton();">Submit</button>
+    <button id="pass" onclick="clickPassButton();">Pass</button>
   </div>
 
   <!-- <div class="pass">
