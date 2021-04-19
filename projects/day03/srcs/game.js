@@ -30,7 +30,17 @@ document.ondragstart = (e) => {
 };
 
 let score = 0;
+let time = 60;
 document.getElementById("score").innerHTML = score;
+document.getElementById("time").innerHTML = time;
+
+setInterval(() => {
+	time -= 1;
+	document.getElementById("time").innerHTML = time;
+	if (time == 0) {
+		location.href = "end.html";
+	}
+}, 1000);
 
 function clickSubmitButton() {
 	const userAnswer = document.getElementById("answer").value;
@@ -46,7 +56,8 @@ function clickPassButton() {
 
 }
 
-const userAnswer = document.getElementById("answer");
-userAnswer.addEventListener('click', () => {
+const answer = document.getElementById("answer");
+answer.addEventListener('click', () => {
+	document.getElementById("answer").value = "";
 	document.getElementById("result").innerHTML = "";
 });
